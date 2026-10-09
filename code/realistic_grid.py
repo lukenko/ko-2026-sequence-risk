@@ -1,9 +1,4 @@
-"""
-Table 1. Sequencing share of depletion, rho_dep, for the four model portfolios across
-withdrawal rates, T = 30, with bootstrap standard errors and the depletion probability.
-For each simulated multiset, K orderings are sampled and the order variance p_M(1-p_M) is
-estimated by the unbiased U-statistic S(K-S)/[K(K-1)].
-"""
+# Table 1: sequencing share of depletion by portfolio and withdrawal rate, T = 30.
 import numpy as np
 W0 = 100.0
 def ruin_count(returns, f, K, rng):

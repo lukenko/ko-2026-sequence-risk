@@ -1,9 +1,5 @@
-"""
-Figure 2. Sequencing share of terminal-wealth variance over the horizon T and the
-withdrawal rate w, for the conservative and aggressive portfolios, with the
-expected-depletion boundary w*(T) = W0 (g-1)/(1 - g^(-T)), the withdrawal at which the
-mean wealth path reaches zero at T. Exact closed forms.
-"""
+# Figure 2: sequencing share over horizon and withdrawal rate, with the
+# expected-depletion boundary.
 import numpy as np
 import matplotlib
 matplotlib.use("Agg")

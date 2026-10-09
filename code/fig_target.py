@@ -1,9 +1,5 @@
-"""
-Figure 4. Goal attainment as the target G varies, for three model portfolios. Same career
-plan as Table 2 with a 15% savings rate. G is expressed as a multiple of final income,
-100 (1.02)^39; the dashed line marks the Table 2 goal of 17.5 times final income. Left
-panel: attainment probability. Right panel: sequencing share.
-"""
+# Figure 4: attainment probability and sequencing share as the goal varies
+# (15% savings rate, otherwise as in Table 2).
 import numpy as np
 import matplotlib
 matplotlib.use("Agg")

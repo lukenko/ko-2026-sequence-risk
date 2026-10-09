@@ -1,8 +1,5 @@
-"""
-Section 6.1. Depletion split under normal and Student-t (4 degrees of freedom) returns
-with the same mean and variance, for the four model portfolios at a 5% withdrawal,
-T = 30, W0 = 100.
-"""
+# Section 6.1: depletion split with Student-t(4) returns instead of normal, same mean
+# and variance, 5% withdrawal.
 import numpy as np
 W0 = 100.0
 def draws(kind, mu, sigma, shape, rng):

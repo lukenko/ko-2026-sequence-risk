@@ -19,8 +19,3 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-
-The MIT License applies to the code in code/ and to run_all.py. The return series in
-data/ are compiled from third-party public sources (Damodaran, NYU Stern; U.S. Bureau
-of Labor Statistics) and are redistributed for replication with attribution; see
-README.md.

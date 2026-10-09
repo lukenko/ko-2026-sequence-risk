@@ -1,9 +1,4 @@
-"""
-Common style for the figures. Each fig_*.py script calls apply() before plotting.
-
-All series use shades of a single blue (ColorBrewer "Blues"), with darker shades for more
-volatile portfolios or longer horizons.
-"""
+# Shared plot settings for the figure scripts.
 import matplotlib.pyplot as plt
 
 # ColorBrewer "Blues", light to dark
@@ -57,5 +52,4 @@ def apply():
 
 
 def ygrid(ax):
-    """Draw axes elements below the data."""
     ax.set_axisbelow(True)

@@ -1,12 +1,5 @@
-"""
-Size of the sequencing share of terminal-wealth variance (Section 5.5), from the
-closed forms in verify_split.py.
-
-(1) Sequencing share for the four model portfolios at T = 30 across withdrawal rates.
-(2) Coefficient of variation of the exposure weights a_t = B_{t-1} g^(T-t), which governs
-    the share in the small-volatility limit (Proposition 3), for withdrawal and
-    contribution plans of the same size.
-"""
+# Numbers in Section 5.5: variance shares by portfolio and withdrawal rate at T = 30, and
+# the CV of the exposure weights for withdrawals vs contributions.
 import numpy as np
 from verify_split import total_var_exact, level_var_closed, mean_path
 

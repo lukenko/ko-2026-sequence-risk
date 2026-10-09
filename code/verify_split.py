@@ -1,19 +1,6 @@
 """
-Closed-form sequencing / return-level split of terminal-wealth variance (Section 5),
-checked against brute force.
-
-Under i.i.d. returns, conditioning on the realized multiset M gives
-    Var[W_T] = E_M[Var_pi(W_T | M)]  +  Var_M(E_pi[W_T | M])
-                 (sequencing)            (return level)
-
-For several short plans (T = 6), the script compares
-  (1) the return-level closed form with a Monte Carlo estimate over 3000 multisets,
-  (2) the sequencing term (total minus return level) with the average variance over
-      all T! orderings of each simulated multiset, and
-  (3) the direct closed form for the sequencing term with the difference in (2).
-Monte Carlo estimates are shown with their standard errors.
-
-The functions total_var_exact and level_var_closed are also used by the figure scripts.
+Closed forms for the sequencing / return-level split (Section 5), plus a brute-force
+check on a few 6-period plans: simulate multisets and enumerate all 720 orderings of each.
 """
 import numpy as np
 from itertools import permutations
@@ -21,7 +8,6 @@ from math import comb
 
 
 def total_var_exact(mu, sigma, f, W0):
-    """Var[W_T] from the variance recursion, i.i.d. returns."""
     T = len(f); g = 1 + mu; s2 = sigma**2
     EW = W0; VW = 0.0
     for t in range(T):
@@ -31,7 +17,6 @@ def total_var_exact(mu, sigma, f, W0):
 
 
 def mean_path(mu, f, W0):
-    """Expected wealth E[W_0], ..., E[W_T]."""
     g = 1 + mu; EW = [W0]
     for ft in f:
         EW.append(g*EW[-1] + ft)
@@ -39,7 +24,7 @@ def mean_path(mu, f, W0):
 
 
 def cov_ebar(a, b, T, g, s2):
-    """Cov of normalized elementary symmetric polynomials (Proposition 1)."""
+    # Proposition 1
     if a > b:
         a, b = b, a
     g2s2 = g*g + s2
@@ -50,7 +35,6 @@ def cov_ebar(a, b, T, g, s2):
 
 
 def level_var_closed(mu, sigma, f, W0):
-    """Return-level term, sum_{k,l} c_k c_l Cov(ebar_{T-k}, ebar_{T-l})."""
     T = len(f); g = 1 + mu; s2 = sigma**2
     c = np.empty(T+1); c[0] = W0; c[1:] = f
     val = 0.0
@@ -61,7 +45,6 @@ def level_var_closed(mu, sigma, f, W0):
 
 
 def mc_split(mu, sigma, f, W0, n_mult=4000, seed=0):
-    """Simulate multisets; for each, enumerate all T! orderings exactly."""
     rng = np.random.default_rng(seed); T = len(f)
     seq_terms = []; level_means = []
     perms = list(permutations(range(T)))
@@ -84,13 +67,12 @@ def mc_split(mu, sigma, f, W0, n_mult=4000, seed=0):
 
 
 def Epp(k, l, T, g, s2):
-    """E[P_k P_l] for the ordered accumulation factors."""
     m = max(k, l)
     return (g*g + s2)**(T - m) * g**abs(k - l)
 
 
 def seq_direct(mu, sigma, f, W0):
-    """Sequencing term directly, sum c_k c_l (E[P_k P_l] - E[ebar ebar])."""
+    # sequencing term directly, instead of total minus level
     T = len(f); g = 1 + mu; s2 = sigma**2
     c = np.empty(T+1); c[0] = W0; c[1:] = f
     val = 0.0

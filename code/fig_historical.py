@@ -1,9 +1,4 @@
-"""
-Figure 5. For each 30-year window of real 60/40 returns, the window's returns are held
-fixed and reordered under a real withdrawal of 4 with W0 = 100. Plots the 10th to 90th
-percentile band and median of terminal wealth across reorderings, and terminal wealth
-under the historical order, each divided by that window's median.
-"""
+# Figure 5: reordering bands for each 30-year window of real 60/40 returns, 4% draw.
 import numpy as np
 import matplotlib
 matplotlib.use("Agg")

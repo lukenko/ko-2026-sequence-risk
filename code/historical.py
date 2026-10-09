@@ -1,14 +1,9 @@
 """
-Section 7. Sequence risk in U.S. returns, 1928-2025: summary statistics of the 60/40
-portfolio, the 1966 cohort, and Table 3.
+Section 7 and Table 3, on U.S. returns 1928-2025.
 
-A 30-year window's returns are held fixed and reordered, so only their order varies. A
-portfolio's nominal return is the fixed-weight average of the stock and bond returns
-(annual rebalancing), and its real return is (1 + nominal)/(1 + inflation) - 1.
-
-Data: S&P 500 and ten-year U.S. Treasury total returns (Damodaran, NYU Stern, "Historical
-Returns on Stocks, Bonds and Bills", January 2026) and annual-average U.S. CPI inflation
-(BLS), all in percent. The same series are in data/us_annual_returns_1928_2025.csv.
+Nominal S&P 500 and 10-year Treasury total returns are from Damodaran's NYU Stern data
+page (January 2026); inflation is annual-average CPI from the BLS. Portfolios are
+rebalanced annually and converted to real returns.
 """
 import numpy as np
 

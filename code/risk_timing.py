@@ -1,9 +1,6 @@
 """
-Table 4. Depletion probability and terminal-wealth variance under three volatility
-schedules with the same mean (5%) and average volatility (13%): rising from 8% to 18%,
-constant at 13%, and falling from 18% to 8%. Thirty-year decumulation with a withdrawal of
-5 from W0 = 100. Depletion uses the absorbing barrier at zero; the variance is exact, from
-the per-period decomposition of the linear model.
+Table 4: depletion and Var[W_T] for three volatility schedules with the same mean and
+average volatility (8% -> 18%, flat 13%, 18% -> 8%), 5% withdrawal over 30 years.
 """
 import numpy as np
 
@@ -16,7 +13,7 @@ def ruin_prob(mu, sig, f, W0, N=4_000_000, seed=0):
     return ruined.mean()
 
 def var_terminal(mu, sig, f, W0):
-    """Var[W_T] = sum_t sigma_t^2 B_{t-1}^2 Gamma_t (linear model, no barrier)."""
+    # exact variance, no barrier
     T = len(f); B = [float(W0)]
     for t in range(T - 1):
         B.append((1 + mu[t]) * B[-1] + f[t])

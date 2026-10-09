@@ -1,8 +1,4 @@
-"""
-Figure 1. Sequencing share of terminal-wealth variance against the cash-flow rate
-(withdrawals negative, contributions positive) for horizons T = 10 to 50, aggressive
-portfolio (mu = 7%, sigma = 18%). Exact closed forms.
-"""
+# Figure 1: sequencing share vs cash-flow rate, aggressive portfolio, T = 10..50.
 import numpy as np
 import matplotlib
 matplotlib.use("Agg")

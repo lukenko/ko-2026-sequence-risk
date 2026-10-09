@@ -1,9 +1,5 @@
-"""
-Figure 3. Shortfall against a floor L = ell * W0 for three model portfolios at a 5%
-withdrawal, T = 30. A path falls short when min_t W_t <= L, so recording each ordering's
-running minimum gives the shortfall probability and its sequencing share at every floor
-in one pass. Left panel: shortfall probability. Right panel: sequencing share.
-"""
+# Figure 3: shortfall probability and its sequencing share as the floor rises from 0 to
+# 0.6 of starting wealth (5% withdrawal, T = 30).
 import numpy as np
 import matplotlib
 matplotlib.use("Agg")

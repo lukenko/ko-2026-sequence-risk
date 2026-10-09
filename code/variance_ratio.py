@@ -1,10 +1,4 @@
-"""
-Section 9. Five-year variance ratio of U.S. real equity returns, 1928-2025, and the AR(1)
-autocorrelation that matches it.
-
-VR(k) = Var(k-year sum) / (k Var(1-year)); values below one indicate mean reversion. For an
-AR(1) with lag-one autocorrelation phi, VR(k) = 1 + 2 sum_{j=1}^{k-1} (1 - j/k) phi^j.
-"""
+# Five-year variance ratio of real equity returns, and the AR(1) phi that matches it.
 import numpy as np
 from historical import real_series
 

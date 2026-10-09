@@ -1,15 +1,8 @@
 """
-Section 9. Stability of the importance-sampling estimates behind Table 5.
-
-Same estimator as dependence_grid.py. With the same seed the simulated multisets are
-identical, so the share can be compared across settings on the same draws. For each case:
-  - the share with K = 6000 orderings per multiset (as in Table 5) and with K = 24000;
-  - the smallest effective sample size (ESS) as a fraction of K;
-  - the share after dropping multisets with ESS below 1% and below 5% of K.
-
-Seed 101 is run for all four portfolios. The likelihood weights depend only on the
-standardized returns, so ESS is the same for every portfolio; seeds 202 and 303 are run
-for the balanced portfolio only.
+Checks that the Table 5 importance-sampling estimates are stable: same multisets with
+K = 6000 vs 24000 orderings, and with the lowest effective-sample-size multisets dropped.
+The weights only depend on standardized returns, so seeds 202 and 303 are run for one
+portfolio only.
 """
 import numpy as np
 

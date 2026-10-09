@@ -1,10 +1,5 @@
-"""
-Section 8. Accumulation counterpart of Table 4: a level real contribution of 5 a year from
-W0 = 100 over 30 years, with the same mean and volatility schedules. Reports the
-probability of reaching a target set at expected terminal wealth under the falling
-schedule (the variance-minimizing order for contributions, Proposition 4) and under its
-time reverse. Linear model, no barrier.
-"""
+# Accumulation version of Table 4: contribute 5 a year instead of withdrawing it, same
+# mean and volatility schedules, target = expected terminal wealth.
 import numpy as np
 
 T, W0, mu, f, N, SEED = 30, 100.0, 0.05, 5.0, 2_000_000, 5

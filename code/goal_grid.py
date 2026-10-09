@@ -1,15 +1,7 @@
 """
-Table 2. Sequencing share of goal attainment, rho_att, for the four model portfolios
-across savings rates.
-
-Career plan: one year's income already saved (W0 = 100) and a contribution of s% of an
-income that starts at 100 and grows at 2% a year in real terms, over T = 40 years, so
-f_t = s (1.02)^(t-1). The goal G = 3800 is 25 times a draw of 70% of final income,
-100 (1.02)^39 = 216, following the four-percent rule.
-
-For each multiset, K orderings are sampled; the order variance is the unbiased U-statistic
-S(K-S)/[K(K-1)], where S counts orderings that reach G, and
-rho_att = mean over multisets of that variance / [P(1-P)].
+Table 2. Career plan: W0 = 100 (one year's income already saved), income starts at 100
+and grows 2% a year, contribution = savings rate x income, T = 40. The goal is
+25 x 70% of final income, about 3800.
 """
 import numpy as np
 

@@ -1,14 +1,10 @@
 """
-Table 5. Sequencing share of depletion under serial dependence, for the four model
-portfolios at a withdrawal of 4 from W0 = 100 over T = 30.
+Table 5: sequencing share of depletion when returns follow an AR(1),
+r_t = mu + phi (r_{t-1} - mu) + eps_t, with Var(r_t) held at sigma^2.
 
-Returns follow an AR(1), r_t = mu + phi (r_{t-1} - mu) + eps_t, with eps_t scaled so that
-Var(r_t) = sigma^2. For each realized multiset, K orderings are drawn uniformly and weighted
-by their AR(1) likelihood (self-normalized importance sampling); p_M is the weighted
-depletion frequency and the order variance is p_M(1 - p_M). Shares are averaged over three
-seeds, with the standard deviation across seeds in parentheses. The last columns give
-Var[W_T] at phi = -0.2 and +0.2 relative to phi = 0, and the final two the median and
-minimum effective sample size, (sum w)^2 / sum w^2, as a fraction of K.
+Orderings of each multiset are no longer equally likely, so K of them are drawn uniformly
+and reweighted by their AR(1) likelihood (self-normalized importance sampling). Averaged
+over seeds 101, 202, 303. Also prints the variance ratios and the effective sample size.
 """
 import numpy as np
 

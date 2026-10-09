@@ -1,17 +1,8 @@
 """
-Section 9. Block bootstrap of the historical returns as an empirical check on the
-variance share under serial dependence.
-
-The split of unconstrained terminal wealth (withdrawal of 4 a year from W0 = 100 over
-T = 30) is estimated two ways:
-  (1) the closed form under independence, using the sample mean and variance;
-  (2) a circular block bootstrap that builds 30-year paths from blocks of L consecutive
-      years. For each path's multiset M, K uniform reorderings give E_pi[W_T | M] and
-      Var_pi(W_T | M), and
-          sequencing = mean over paths of Var_pi,  return level = variance of E_pi,
-          rho = sequencing / (sequencing + return level).
-With L = 1 the bootstrap is i.i.d. and should agree with (1); L > 1 keeps the serial
-dependence of the data.
+Section 9 bootstrap check. Compares the closed-form (i.i.d.) split of terminal-wealth
+variance with a circular block bootstrap of the actual return series, for a 4% draw over
+30 years. L = 1 is an i.i.d. bootstrap and should roughly match the closed form; longer
+blocks keep the mean reversion in the data.
 """
 import numpy as np
 from math import comb
