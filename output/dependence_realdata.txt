@@ -1,0 +1,12 @@
+
+equity (100/0): real mean 8.6%, sd 19.5%, VR(8) = 0.67, VR(10) = 0.71
+closed form (iid)   : rho =   2.5%   (total 1.31e+06, level 1.28e+06, seq 3.31e+04)
+block bootstrap L=1 : rho =   2.7%   (total 1.16e+06, level 1.13e+06, seq 3.17e+04)   [i.i.d. check]
+block bootstrap L=4 : rho =   3.0%   (total 9.88e+05, level 9.58e+05, seq 3.01e+04)   [dependent]
+block bootstrap L=8 : rho =   4.5%   (total 5.57e+05, level 5.33e+05, seq 2.49e+04)   [dependent]
+
+60/40: real mean 5.9%, sd 12.4%, VR(8) = 0.81, VR(10) = 0.81
+closed form (iid)   : rho =   5.3%   (total 7.69e+04, level 7.29e+04, seq 4.04e+03)
+block bootstrap L=1 : rho =   5.4%   (total 7.3e+04, level 6.9e+04, seq 3.94e+03)   [i.i.d. check]
+block bootstrap L=4 : rho =   5.8%   (total 6.96e+04, level 6.55e+04, seq 4.01e+03)   [dependent]
+block bootstrap L=8 : rho =   7.8%   (total 4.86e+04, level 4.48e+04, seq 3.81e+03)   [dependent]

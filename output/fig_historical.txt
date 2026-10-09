@@ -1,0 +1,4 @@
+p10/med range [0.04,0.78], p90/med range [1.17,1.73]
+realized/med: min 0.00 at 1966, median 1.05, max 2.14
+realized below its own 10th pct in 12 of 69 windows
+wrote historical_reorder.pdf

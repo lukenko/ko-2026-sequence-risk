@@ -1,0 +1,29 @@
+Split of Var[W_T], T = 6, checked against all 6! orderings of each multiset
+
+  withdrawal 4, sigma 11%  
+    total             1014.5792
+    return level      1010.3743   simulated     965.4106 (s.e.  28.8832)
+    sequencing           4.2050   simulated       4.1341 (s.e.   0.0498)
+    sequencing, direct closed form       4.2050   |diff| 5.35e-12
+    sequencing share rho =  0.414%
+
+  withdrawal 6, sigma 15%  
+    total             1765.7439
+    return level      1747.9105   simulated    1659.7537 (s.e.  55.7141)
+    sequencing          17.8334   simulated      17.4569 (s.e.   0.2201)
+    sequencing, direct closed form      17.8334   |diff| 8.18e-12
+    sequencing share rho =  1.010%
+
+  contribution 10, sigma 12%
+    total             2394.2933
+    return level      2361.6429   simulated    2257.8577 (s.e.  66.8267)
+    sequencing          32.6504   simulated      32.0655 (s.e.   0.3900)
+    sequencing, direct closed form      32.6504   |diff| 5.97e-13
+    sequencing share rho =  1.364%
+
+  no cash flows            
+    total             1454.1279
+    return level      1454.1279   simulated    1388.4420 (s.e.  42.0796)
+    sequencing           0.0000   simulated       0.0000 (s.e.   0.0000)
+    sequencing, direct closed form       0.0000   |diff| 8.41e-12
+    sequencing share rho =  0.000%

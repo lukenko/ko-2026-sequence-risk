@@ -1,0 +1,7 @@
+Table 5: withdrawal 4, T = 30, W0 = 100
+share = sequencing share of depletion, mean (s.d.) over 3 seeds; [dep] = depletion probability
+   portfolio |   phi=-0.2 share [dep] |   phi=+0.0 share [dep] |   phi=+0.2 share [dep] | V-0.2/0 V+0.2/0 | ESS/K med    min
+conservative |      65.3 (0.6) [ 4.3] |      60.4 (0.7) [ 8.0] |      56.1 (0.5) [12.6] |   0.62x   1.70x |     0.391  0.008
+    balanced |      61.3 (0.7) [ 8.3] |      57.3 (0.6) [12.9] |      53.9 (0.3) [17.9] |   0.55x   1.99x |     0.391  0.008
+      growth |      60.6 (0.7) [ 9.7] |      56.8 (0.6) [14.5] |      53.6 (0.3) [19.6] |   0.50x   2.31x |     0.391  0.008
+  aggressive |      59.7 (0.6) [11.4] |      56.2 (0.5) [16.4] |      53.2 (0.3) [21.6] |   0.44x   2.74x |     0.391  0.008

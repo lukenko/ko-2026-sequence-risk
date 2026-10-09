@@ -1,0 +1,4 @@
+T = 30, W0 = 100, contribution 5, mu = 5%, target G = E[W_T] = 764.4, N = 2,000,000
+P(W_T >= G), volatility falling 18% to 8% = 38.17%
+P(W_T >= G), volatility rising 8% to 18%  = 37.81%
+difference = +0.36 percentage points (s.e. of each about 0.04)

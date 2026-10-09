@@ -1,0 +1,7 @@
+Variance ratio, U.S. real equity returns 1928-2025:
+  VR(5) = 0.73   (VR(3) = 0.85)
+AR(1) variance ratio VR(5) by phi:
+  phi = -0.15  ->  VR(5) = 0.78
+  phi = -0.20  ->  VR(5) = 0.72
+  phi = -0.25  ->  VR(5) = 0.66
+  phi = -0.30  ->  VR(5) = 0.61

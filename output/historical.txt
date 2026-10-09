@@ -1,0 +1,10 @@
+60/40 real return 1928-2025: mean 5.9%, sd 12.4%
+1966-1995, 60/40, 4% rule: realized order -> final 0.0 (depleted); reordered -> median 100, deplete 3% of orderings
+
+Table 3: windows depleted, and of those, reversed under a majority of reorderings
+ alloc   sd% | 4% dep 4% rev | 5% dep 5% rev
+ 100/0  19.5 |      1      1 |     13     13
+ 80/20  15.8 |      1      1 |     13     13
+ 60/40  12.4 |      1      1 |     16     16
+ 40/60   9.7 |      5      5 |     25     18
+ 20/80   8.1 |     19     16 |     41      8

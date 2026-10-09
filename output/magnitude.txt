@@ -1,0 +1,12 @@
+(1) Sequencing share of Var[W_T] (%), T = 30, W0 = 100
+     portfolio    w=0%    w=3%    w=4%    w=5%
+  conservative     0.0     4.3     9.6    19.1
+      balanced     0.0     3.1     6.8    13.1
+        growth     0.0     2.3     4.9     9.4
+    aggressive     0.0     1.8     3.7     6.8
+
+(2) CV of exposure weights, aggressive portfolio, T = 30
+      withdrawal 5  CV =  0.30   share =   6.8%
+    contribution 5  CV =  0.13   share =   1.6%
+   contribution 10  CV =  0.20   share =   4.0%
+   contribution 15  CV =  0.24   share =   6.1%

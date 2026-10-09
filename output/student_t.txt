@@ -1,0 +1,5 @@
+Normal vs Student-t(4), w = 5%, T = 30: depletion probability P and rho_dep, with differences (t minus normal)
+  Conservative 4/8 normal P=32.61 rho= 52.2 | t P=30.92 rho= 50.6 | dP=-1.69 drho= -1.6 (se_rho~0.3)
+  Balanced 5/12    normal P=30.77 rho= 52.9 | t P=29.04 rho= 50.5 | dP=-1.73 drho= -2.4 (se_rho~0.3)
+  Growth 6/15      normal P=28.83 rho= 53.6 | t P=27.29 rho= 50.1 | dP=-1.54 drho= -3.5 (se_rho~0.3)
+  Aggressive 7/18  normal P=28.57 rho= 53.9 | t P=27.32 rho= 49.1 | dP=-1.25 drho= -4.8 (se_rho~0.3)

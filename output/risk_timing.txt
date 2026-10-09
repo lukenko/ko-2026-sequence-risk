@@ -1,0 +1,4 @@
+Table 4: T = 30, withdrawal 5, mu = 5%, W0 = 100
+  low volatility early, 8% to 18%     P(depletion) = 27.20%   Var[W_T] = 29,837
+  constant, 13%                       P(depletion) = 33.99%   Var[W_T] = 40,314
+  high volatility early, 18% to 8%    P(depletion) = 40.00%   Var[W_T] = 56,527
